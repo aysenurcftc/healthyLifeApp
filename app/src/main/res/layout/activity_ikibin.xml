@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/todo3"
-    tools:context=".DiyetActivity">
+    tools:context=".ikibinActivity">
 
     <TextView
         android:id="@+id/title"
@@ -19,21 +19,17 @@
         android:shadowRadius="1"
         android:background="@drawable/border_spor"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Diyet Listesi Belirle"
+        android:text="Diyet Listesi 2000 Kalori"
         android:textColor="@color/orange"
         android:textSize="28sp" />
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="387dp"
-        android:layout_height="224dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="397dp"
+        android:layout_height="540dp"
+        android:layout_marginTop="150dp"
         android:columnCount="3"
-        android:rowCount="2">
+        android:rowCount="3">
 
 
         <androidx.cardview.widget.CardView
@@ -62,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1000 kalori"
+                    android:text="SABAH"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
@@ -95,7 +91,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1500 kalori"
+                    android:text="ÖĞLE"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
@@ -128,20 +124,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2000 kalori"
+                    android:text="AKŞAM"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/ikibinbesyuz"
+            android:id="@+id/sabah"
             android:layout_width="115dp"
-            android:layout_height="100dp"
+            android:layout_height="320dp"
             android:layout_row="1"
             android:layout_column="0"
+            android:layout_gravity="bottom"
             android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp">
 
@@ -152,28 +154,46 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/food23" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2500 kalori"
+                    android:text="SABAH"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-2 yumurta,
+                        -2 dilim tam buğday ekmeği,
+                        -Bir avuç ıspanak,
+                        -Yarım avokado,
+                       - Bir bardak portakal suyu
+                        -Bir fincan siyah kahve veya yeşil çay"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/ucbin"
+            android:id="@+id/ogle"
             android:layout_width="115dp"
-            android:layout_height="100dp"
+            android:layout_height="320dp"
             android:layout_row="1"
             android:layout_column="1"
+            android:layout_gravity="bottom"
             android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp">
 
@@ -184,28 +204,42 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/food4" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3000 kalori"
+                    android:text="ÖĞLE"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Izgara tavuk göğsü
+                        -Yarım su bardağı esmer pirinç
+                        -Bir su bardağı sebzeli karışım (örneğin, brokoli, havuç, fasulye - 50 kalori)
+                        -1 tatlı kaşığı zeytinyağı"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/ucbinbesyuz"
+            android:id="@+id/aksam"
             android:layout_width="115dp"
-            android:layout_height="100dp"
+            android:layout_height="320dp"
             android:layout_row="1"
             android:layout_column="2"
+            android:layout_gravity="bottom"
             android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp">
 
@@ -216,21 +250,57 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/dumbbell" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AKŞAM"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3500 kalori"
+                    android:text="-150 gram somon balığı
+                        -Bir su bardağı quinoa
+                        -Bir su bardağı ızgara sebzeler (örneğin, kabak, biber, patlıcan - 80 kalori),
+                        -Bir tatlı kaşığı zeytinyağı
+                        -Bir orta boy muz"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textStyle="bold" />
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <Button
+            android:id="@+id/sabahyemek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Tamam" />
+
+
+        <Button
+            android:id="@+id/ogleyemek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="Tamam" />
+
+        <Button
+            android:id="@+id/aksamyemek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="Tamam" />
 
     </GridLayout>
 </RelativeLayout>

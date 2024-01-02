@@ -21,6 +21,17 @@
         android:textColor="@color/orange"
         android:textSize="28sp" />
 
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Tamamla" />
+
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="401dp"
@@ -338,4 +349,8 @@
 
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
+
+
+
 </RelativeLayout>

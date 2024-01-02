@@ -13,6 +13,24 @@
         android:theme="@style/Theme.MobileFinal"
         tools:targetApi="31">
         <activity
+            android:name=".ucbinbesyuzActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ucbinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ikibinbesyuzActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ikibinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".binbesyuzActivity"
+            android:exported="false" />
+        <activity
+            android:name=".binKaloriActivity"
+            android:exported="false" />
+        <activity
             android:name=".DiyetActivity"
             android:exported="false" />
         <activity
