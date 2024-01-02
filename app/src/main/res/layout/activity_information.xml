@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:scaleType="centerCrop"
+
+    tools:context=".InformationActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="397dp"
+        android:layout_height="428dp"
+        android:layout_margin="100dp"
+        android:padding="20dp"
+        android:text="Diyet, günlük hayatta tüketilen besinlerin az ya da çok, doğru ya da yanlış tüketilerek sağlığın zarar görmesine engel olmak için uzmanlar tarafından hazırlanan ve kişiye özgü olan yaşam tarzı değişikliğidir.Diyet nedir sorusunu yanıtladığımıza göre, diyet kelimesinin de anlamına bakmak gerekir. Diyet kelimesi Yunancadan gelen “diaita” kelimesinden türemiştir. Diaita kelime anlamı olarak “yaşam tarzı” anlamına gelmektedir. Günümüzde çoğu insan tarafından sanılanın aksine diyet; aç kalmak, tatsız, tuzsuz, yağsız beslenmek, sadece ağırlık kaybı yaşamak ya da sadece kronik ya da akut hastalığa sahip olan bireyler için yapılan bir eylem değildir. Bu, sağlıklı beslenerek ve sağlığı bozmayacak şekilde yapılır. Yanlış ve sağlıksız tarzda beslenmek, kısa süreli aç kalmak demek değildir."
+        android:textColor="#0E5711"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:onClick="changeActivity"
+        android:text="Devam Et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
