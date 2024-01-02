@@ -6,5 +6,7 @@
     <color name="lavender">#8692f7</color>
     <color name="orange">#edab3a</color>
     <color name="pink">#EFA7B4</color>
+    <color name="red">#FF0000</color>
+    <color name="lavenderlight">#C2C6ED</color>
 
 </resources>
