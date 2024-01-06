@@ -18,13 +18,10 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        // Verilerinizi burada belirleyin
         String[] data = {"Günlük Kalori Belirleme", "Günlük Egzersiz Belirleme", "Diyet Listesi Belirleme"};
 
-        // Veri adaptörünü oluşturun
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.grid_item, R.id.textViewTitle, new ArrayList<>(Arrays.asList(data)));
 
-        // GridView'e adaptörü ayarlayın
         GridView gridView = findViewById(R.id.gridView);
         gridView.setAdapter(adapter);
 

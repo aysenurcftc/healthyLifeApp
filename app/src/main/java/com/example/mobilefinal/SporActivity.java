@@ -3,6 +3,7 @@ package com.example.mobilefinal;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -57,6 +58,8 @@ public class SporActivity extends AppCompatActivity {
             System.out.println("Kalan kalori: " + totalKalori);
             updateDatabaseWithTotalCalorie(totalKalori);
             showToast("Seçim Eklendi");
+            Intent intent = new Intent(getApplicationContext(), ListActivity.class);
+            startActivity(intent);
         });
 
 
@@ -101,7 +104,6 @@ public class SporActivity extends AppCompatActivity {
             String updateQuery = "UPDATE kaloriler SET kalori = " + totalKalori;
             database.execSQL(updateQuery);
             System.out.println(totalKalori);
-
             database.close();
         } catch (Exception e) {
             e.printStackTrace();

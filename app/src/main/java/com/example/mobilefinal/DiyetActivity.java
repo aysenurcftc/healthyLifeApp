@@ -214,11 +214,9 @@ public class DiyetActivity extends AppCompatActivity {
         totalKalori = 0;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        // Inflate the custom layout
         View customLayout = getLayoutInflater().inflate(R.layout.custom_layout_dialog, null);
         builder.setView(customLayout);
 
-        // Find views in the custom layout
         TextView titleTextView = customLayout.findViewById(R.id.dialogTitle);
         TextView messageTextView = customLayout.findViewById(R.id.dialogMessage);
         Button okButton = customLayout.findViewById(R.id.dialogButton);
